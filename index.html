@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passwort-Check</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="app">
+    <div class="card">
+      <h1>🔒 Passwort-Check</h1>
+      <p class="subtitle">Ein Passwort braucht 8 bis 16 Zeichen.</p>
+
+      <div class="row">
+        <div class="column">
+          <input id="passwordInput"  placeholder="Passwort eingeben" aria-label="Passwort">
+          <input id="passwordRepeatInput"  placeholder="Passwort wiederholen" aria-label="Passwort">
+        </div>
+        <button onclick="checkPassword()">Prüfen</button>
+      </div>
+
+      <div id="message" class="result">&nbsp;</div>
+
+      <div class="tests">
+        💡 Öffne die Browser-Konsole mit <strong>F12</strong>, um die automatischen Tests zu sehen.
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
